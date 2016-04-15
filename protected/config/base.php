@@ -105,11 +105,6 @@ $config = [
     ],
 
     'params' => [
-        'ssoUser' => [
-            'host'      => 'https://i.camera360.com',
-            'appkey'    => 'fd8463e40988de06', // change to your appkey
-            'appsecret' => '825b682ffd8463e40988de0695328954', // change to your appsecret
-        ],
     ],
 ];
 
