@@ -1,40 +1,33 @@
 {
-    "name": "PGWireless/template",
-    "type": "project",
-    "license": "proprietary",
-    "support": {
-        "issues": "https://github.com/PGWireless/template/issues?state=open",
-        "source": "https://github.com/PGWireless/template"
-    },
-    "minimum-stability": "stable",
-    "repositories": {
-	    "packagist": {
-	        "type": "composer",
-	        "url": "https://packagist.phpcomposer.com"
-	    },
-        "lib-compatible": {
-            "type": "vcs",
-            "url": "https://github.com/PGWireless/lib-compatible"
-        }
-    },
-    "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.7",
-        "PGWireless/lib-compatible": "dev-master"
-    },
-    "require-dev": {
-        "yiisoft/yii2-codeception": "*",
-        "yiisoft/yii2-debug": "*",
-        "phpunit/phpunit": ">=5.2.0"
-    },
-    "config": {
-        "process-timeout": 1800,
-        "vendor-dir": "../vendor/"
-    },
-    "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "../vendor/npm",
-            "bower-asset-library": "../vendor/bower"
-        }
+  "name" : "claywong/moviefinder",
+  "require" : {
+    "php" : ">=5.4.0",
+    "yiisoft/yii2" : ">=2.0.7"
+  },
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.phpcomposer.com"
+  } ],
+  "require-dev" : {
+    "yiisoft/yii2-codeception" : "*",
+    "yiisoft/yii2-debug" : "*",
+    "phpunit/phpunit" : ">=5.2.0"
+  },
+  "license" : "proprietary",
+  "extra" : {
+    "asset-installer-paths" : {
+      "npm-asset-library" : "../vendor/npm",
+      "bower-asset-library" : "../vendor/bower"
     }
+  },
+  "minimum-stability" : "stable",
+  "type" : "project",
+  "support" : {
+    "issues" : "https://github.com/PGWireless/template/issues?state=open",
+    "source" : "https://github.com/PGWireless/template"
+  },
+  "config" : {
+    "process-timeout" : 1800,
+    "vendor-dir" : "../vendor/"
+  }
 }

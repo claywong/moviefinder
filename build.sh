@@ -4,9 +4,9 @@
 #  for Windows/Mac/Linux                  #
 #                                         #
 #  Version: 1.0                           #
-#  Author: liuzhaohui@camera360.com       #
-#  Date: 2015/05/20                       #
-#  https://github.com/PGWireless/env      #
+#  Author: claywong@qq.com                #
+#  Date: 2016/4/12                        #
+#  https://github.com/claywong/moviefinder#
 ###########################################
 VERSION=1.0
 
