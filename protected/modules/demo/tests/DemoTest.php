@@ -1,9 +1,8 @@
 <?php
 namespace app\modules\demo\tests;
 
-use pgc\tests\PTest;
 
-class DemoTest extends PTest
+class DemoTest 
 {
     public function testHelloWorld()
     {

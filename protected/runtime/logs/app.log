@@ -1,0 +1,1799 @@
+2016-04-16 13:14:24 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:14:24 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64554'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca3002868ec7'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783664.515
+    'REQUEST_TIME' => 1460783664
+]
+2016-04-16 13:15:24 [192.168.99.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Request.php:1225
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Request.php(1207): yii\web\Request->loadCookies()
+#1 /home/worker/data/www/vendor/yiisoft/yii2/web/User.php(282): yii\web\Request->getCookies()
+#2 /home/worker/data/www/vendor/yiisoft/yii2/web/User.php(631): yii\web\User->loginByCookie()
+#3 /home/worker/data/www/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/web/User.php(346): yii\web\User->getIdentity()
+#5 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessRule.php(149): yii\web\User->getIsGuest()
+#6 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#7 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#9 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#10 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#11 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#12 /home/worker/data/www/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#13 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#14 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#15 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#16 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#18 {main}
+2016-04-16 13:15:24 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64562'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca6c02868ec8'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783724.4265
+    'REQUEST_TIME' => 1460783724
+]
+2016-04-16 13:16:09 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:09 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64574'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca9902868eca'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783769.2037
+    'REQUEST_TIME' => 1460783769
+]
+2016-04-16 13:16:10 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:10 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64585'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca9a02868ecb'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783770.6554
+    'REQUEST_TIME' => 1460783770
+]
+2016-04-16 13:16:11 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:11 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64590'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca9b02868ecc'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783771.6093
+    'REQUEST_TIME' => 1460783771
+]
+2016-04-16 13:16:11 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:11 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64593'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca9b02868ecd'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783771.9433
+    'REQUEST_TIME' => 1460783771
+]
+2016-04-16 13:16:12 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:12 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64598'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711ca9c02868ece'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783772.3537
+    'REQUEST_TIME' => 1460783772
+]
+2016-04-16 13:16:17 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:17 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64607'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caa102868ecf'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783777.8905
+    'REQUEST_TIME' => 1460783777
+]
+2016-04-16 13:16:19 [192.168.99.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\LoginForm' not found' in /home/worker/data/www/moviefinder/protected/controllers/SiteController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-16 13:16:18 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64619'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caa202868ed0'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783778.9999
+    'REQUEST_TIME' => 1460783778
+]
+2016-04-16 13:16:23 [192.168.99.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'User::identityClass must be set.' in /home/worker/data/www/vendor/yiisoft/yii2/web/User.php:151
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#3 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(152): yii\di\ServiceLocator->get('user')
+#7 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(128): yii\di\Instance->get(NULL)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure('user', 'yii\\web\\User')
+#9 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#12 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(663): yii\BaseYii::createObject(Array)
+#15 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(647): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(529): yii\base\Component->ensureBehaviors()
+#17 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/worker/data/www/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#19 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#20 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#21 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#22 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#24 {main}
+2016-04-16 13:16:23 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64663'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caa702868ed1'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783783.2124
+    'REQUEST_TIME' => 1460783783
+]
+2016-04-16 13:17:01 [192.168.99.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'User::identityClass must be set.' in /home/worker/data/www/vendor/yiisoft/yii2/web/User.php:151
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#3 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(152): yii\di\ServiceLocator->get('user')
+#7 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(128): yii\di\Instance->get(NULL)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure('user', 'yii\\web\\User')
+#9 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#12 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(663): yii\BaseYii::createObject(Array)
+#15 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(647): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(529): yii\base\Component->ensureBehaviors()
+#17 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/worker/data/www/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#19 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#20 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#21 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#22 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#24 {main}
+2016-04-16 13:17:01 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64672'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cacd02868ed2'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783821.6701
+    'REQUEST_TIME' => 1460783821
+]
+2016-04-16 13:17:02 [192.168.99.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'User::identityClass must be set.' in /home/worker/data/www/vendor/yiisoft/yii2/web/User.php:151
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#3 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(152): yii\di\ServiceLocator->get('user')
+#7 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(128): yii\di\Instance->get(NULL)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure('user', 'yii\\web\\User')
+#9 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#12 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(663): yii\BaseYii::createObject(Array)
+#15 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(647): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(529): yii\base\Component->ensureBehaviors()
+#17 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/worker/data/www/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#19 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#20 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#21 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#22 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#24 {main}
+2016-04-16 13:17:02 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64679'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cace02868ed3'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783822.9779
+    'REQUEST_TIME' => 1460783822
+]
+2016-04-16 13:17:03 [192.168.99.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'User::identityClass must be set.' in /home/worker/data/www/vendor/yiisoft/yii2/web/User.php:151
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#3 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(152): yii\di\ServiceLocator->get('user')
+#7 /home/worker/data/www/vendor/yiisoft/yii2/di/Instance.php(128): yii\di\Instance->get(NULL)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure('user', 'yii\\web\\User')
+#9 /home/worker/data/www/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#12 /home/worker/data/www/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/worker/data/www/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(663): yii\BaseYii::createObject(Array)
+#15 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(647): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/worker/data/www/vendor/yiisoft/yii2/base/Component.php(529): yii\base\Component->ensureBehaviors()
+#17 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/worker/data/www/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#19 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#20 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#21 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#22 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#24 {main}
+2016-04-16 13:17:03 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64686'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cacf02868ed4'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783823.7329
+    'REQUEST_TIME' => 1460783823
+]
+2016-04-16 13:17:31 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:17:31 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64693'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caeb02868ed5'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783851.6688
+    'REQUEST_TIME' => 1460783851
+]
+2016-04-16 13:17:32 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:17:32 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64700'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caec02868ed6'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783852.8678
+    'REQUEST_TIME' => 1460783852
+]
+2016-04-16 13:17:33 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:17:33 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64707'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caed02868ed7'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783853.7974
+    'REQUEST_TIME' => 1460783853
+]
+2016-04-16 13:17:34 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:17:34 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64714'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711caee02868ed8'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783854.4775
+    'REQUEST_TIME' => 1460783854
+]
+2016-04-16 13:18:12 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:18:12 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64778'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb1402868edf'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783892.2061
+    'REQUEST_TIME' => 1460783892
+]
+2016-04-16 13:18:18 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:18:18 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64787'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb1a02868ee0'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783898.2324
+    'REQUEST_TIME' => 1460783898
+]
+2016-04-16 13:18:18 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:18:18 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64792'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb1a02868ee1'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783898.8937
+    'REQUEST_TIME' => 1460783898
+]
+2016-04-16 13:18:19 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:18:19 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64797'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb1b02868ee2'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783899.3492
+    'REQUEST_TIME' => 1460783899
+]
+2016-04-16 13:18:19 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:18:19 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64800'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb1b02868ee3'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783899.4878
+    'REQUEST_TIME' => 1460783899
+]
+2016-04-16 13:18:37 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:18:37 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64840'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb2d02868ee8'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783917.637
+    'REQUEST_TIME' => 1460783917
+]
+2016-04-16 13:18:38 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:18:38 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64843'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb2e02868ee9'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783918.2196
+    'REQUEST_TIME' => 1460783918
+]
+2016-04-16 13:19:36 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:19:36 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64856'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb6802868eea'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783976.3909
+    'REQUEST_TIME' => 1460783976
+]
+2016-04-16 13:19:45 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:19:45 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64867'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb7102868eeb'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783985.5795
+    'REQUEST_TIME' => 1460783985
+]
+2016-04-16 13:19:46 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:19:46 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64871'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb7202868eec'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783986.354
+    'REQUEST_TIME' => 1460783986
+]
+2016-04-16 13:19:46 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:19:46 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64873'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb7202868eed'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783986.5555
+    'REQUEST_TIME' => 1460783986
+]
+2016-04-16 13:19:46 [192.168.99.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/worker/data/www/moviefinder/protected/views/site/index.php' in /home/worker/data/www/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/worker/da...', Array, Object(app\controllers\SiteController))
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /home/worker/data/www/moviefinder/protected/controllers/SiteController.php(30): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/worker/data/www/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/worker/data/www/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#8 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#10 {main}
+2016-04-16 13:19:46 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64878'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb7202868eee'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783986.8791
+    'REQUEST_TIME' => 1460783986
+]
+2016-04-16 13:19:52 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:19:52 [192.168.99.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '64916'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cb7802868ef4'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460783992.4249
+    'REQUEST_TIME' => 1460783992
+]
+2016-04-16 13:24:40 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:24:40 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '65016'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cc9802868efe'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460784280.8672
+    'REQUEST_TIME' => 1460784280
+]
+2016-04-16 13:34:20 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:34:20 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '65315'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cedc061a87f5'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460784860.8019
+    'REQUEST_TIME' => 1460784860
+]
+2016-04-16 13:34:22 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:34:22 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '65324'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cede061a87f6'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460784862.579
+    'REQUEST_TIME' => 1460784862
+]
+2016-04-16 13:34:23 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(16): yii\base\Application->run()
+#2 {main}
+2016-04-16 13:34:23 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '65329'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135711cedf061a87f7'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460784863.5181
+    'REQUEST_TIME' => 1460784863
+]
+2016-04-28 14:13:14 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(14): yii\base\Application->run()
+#2 {main}
+2016-04-28 14:13:14 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'environ' => 'newdev'
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '51168'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135721a9fa01391496'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1461823994.6634
+    'REQUEST_TIME' => 1461823994
+]
+2016-04-28 14:16:21 [192.168.99.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in /home/worker/data/www/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/worker/data/www/moviefinder/public/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/worker/data/www/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/worker/data/www/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/worker/data/www/moviefinder/public/index.php(14): yii\base\Application->run()
+#2 {main}
+2016-04-28 14:16:21 [192.168.99.1][-][-][info][application] $_SERVER = [
+    'environ' => 'newdev'
+    'USER' => 'worker'
+    'HOME' => '/home/worker'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/worker/data/www/moviefinder/public/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/demo'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/worker/data/www/moviefinder/public'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.2'
+    'REMOTE_ADDR' => '192.168.99.1'
+    'REMOTE_PORT' => '51207'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'moviefinder.cc'
+    'REDIRECT_STATUS' => '200'
+    'LOG_ID' => 'ac135721aab501391499'
+    'APPLICATION_ENV' => 'development'
+    'HTTP_HOST' => 'dev.moviefinder.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1461824181.7342
+    'REQUEST_TIME' => 1461824181
+]
