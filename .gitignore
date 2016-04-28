@@ -1,4 +1,5 @@
 vendor/*
+/runtime/
 public/assets/*
 .idea/*
 *.prefs
