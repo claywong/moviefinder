@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "becc37c6a0dd284ea3fa232c422fc054",
-    "content-hash": "513577b4cb656386d2b52180a310b7d4",
+    "hash": "6f2f0365d2909d76dff41cc24b8edff1",
+    "content-hash": "a0aa567ff1bae3e4d617d6f2b8aa5c0a",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -318,12 +318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3fe75b3d35c4d228514d6311aff5f88030bb2fd9"
+                "reference": "98423f20d95a49d0c1d3d8d0efdad7d3f4b2128a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3fe75b3d35c4d228514d6311aff5f88030bb2fd9",
-                "reference": "3fe75b3d35c4d228514d6311aff5f88030bb2fd9",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/98423f20d95a49d0c1d3d8d0efdad7d3f4b2128a",
+                "reference": "98423f20d95a49d0c1d3d8d0efdad7d3f4b2128a",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +404,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-04-28 10:00:14"
+            "time": "2016-04-28 10:54:33"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -502,6 +502,53 @@
                 "yii2"
             ],
             "time": "2016-04-14 08:46:37"
+        },
+        {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "32ed4fe4513855690d7e54e2441fe52507510451"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/32ed4fe4513855690d7e54e2441fe52507510451",
+                "reference": "32ed4fe4513855690d7e54e2441fe52507510451",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "time": "2016-02-15 09:27:06"
         }
     ],
     "packages-dev": [
@@ -815,7 +862,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yiisoft/yii2-httpclient": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
